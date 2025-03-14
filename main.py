@@ -19,7 +19,7 @@ async def main():
 
     logger.info('Starting bot')
 
-    config: Config = load_config()
+    config: Config = load_config("/tmp/.env")
 
     bot = Bot(
         token=config.tg_bot.token,
