@@ -2,8 +2,6 @@ from database.database import DICT_STORIES_RU
 from random import choice
 
 
-
-
 def generate_story():
     char_traits = choice(DICT_STORIES_RU['character_traits']).lower()
     char_race = choice(DICT_STORIES_RU['race_list'])
